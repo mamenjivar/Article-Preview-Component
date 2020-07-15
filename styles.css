@@ -75,3 +75,15 @@
     width: 385px;
     margin-left: 50px;
 }
+
+#share {
+    float: right;
+    margin-right: 15px;
+    border-radius: 50%;
+    background-color: #E0E0E0;
+    /* padding: 15px; */
+}
+
+#share:hover {
+    background-color: #C8C8C8;
+}
