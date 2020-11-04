@@ -63,8 +63,6 @@ img {
     line-height: 1.4;
 
     margin: 10px 10px;
-
-    border: 1px solid red;
 }
 
 /* ARTICLE TEXT COMPONENTS */
@@ -83,6 +81,7 @@ img {
     line-height: 1.538;
     color: #6E8098;
     letter-spacing: 0.12;
+    text-align: justify;
 
     margin: 10px 10px;
 }
@@ -90,35 +89,45 @@ img {
 /* ARTICLE FOOTER COMPONENTS */
 .article-footer {
     display: flex;
-    margin: 10px 10px;
+    padding-top: 15px;
+    width: 100%;
 }
 
-.article-footer img {
+.article-footer-author {
+    flex-grow: 2;
+}
+
+.article-footer-image img {
     width: 40px;
-    height: 40px;
+    height: auto;
     border-radius: 50%;
 }
 
-.article-footer .article-footer-name {
-    display: inline-block;
-    font-size: 13px;
-    letter-spacing: 0.12;
-    line-height: 1.538;
-    font-weight: bold;
-    color: #48556A;
+.article-footer-share {
+    align-self: center;
+    justify-content: center;
 }
 
-.article-footer .article-footer-date {
+.author-footer-author .article-footer-name {
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.12;
+    line-height: 1.538;
+    color: #48556a;
+}
+
+.article-footer-author .author-footer-date {
     font-weight: 500;
     font-size: 13px;
-    letter-spacing: 0.12;
-    color: #9DAEC2;
+    letter-spacing: 13;
     line-height: 1.538;
+    color: red;
 }
 
-.article-footer .footer-share {
-    border: 1px solid red;
-    align-items: flex-end;
+.article-footer .article-footer-share i {
+    padding: 8px;
+    border-radius: 50%;
+    background-color: #48556A;
 }
 
 /* FOOTER */
@@ -130,6 +139,10 @@ img {
     bottom: 0;
     width: 100%;
 
+}
+
+.article-footer-share i {
+    align-self: flex-end;
 }
 
 .attribution a { 
